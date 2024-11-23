@@ -5,12 +5,14 @@
 }
 
 .encabezado {
-    background-color: #F9A6D8;
+    position: relative;
+    background-color: #F277A4;
     color: #6A4C37;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
+
 }
 
 .encabezado h1 {
@@ -54,7 +56,7 @@
     justify-content: center;
     align-items: center;
     padding: 40px 20px;
-    background-color: #F9A6D8;
+    background-color: #F277A4;
     color: #6A4C37;
     border-radius: 20px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);

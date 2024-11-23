@@ -1,0 +1,45 @@
+.contenedor {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    margin: 50px auto;
+    overflow: hidden;
+}
+
+.carrusel ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    width: 300%;
+    animation: moverCarrusel 20s infinite alternate ease-in-out;
+}
+
+.carrusel li {
+    width: 33.33%;
+    list-style: none;
+    position: relative;
+}
+
+
+.carrusel img {
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes moverCarrusel {
+    0% {
+        margin-left: 0;
+    }
+    33% {
+        margin-left: -100%;
+    }
+    66% {
+        margin-left: -200%;
+    }
+    100% {
+        margin-left: -200%;
+    }
+}
