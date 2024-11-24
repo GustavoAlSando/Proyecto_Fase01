@@ -1,21 +1,20 @@
-
-
-h1, h2, h3 {
-    color: #6f4f37; /* Color café */
-}
-.imagen {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
-
 .imagen {
     width: 100%;
     height: 700px;
     display: flex;
 }
 
+h1, h2, h3 {
+    color: #6f4f37;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
 
+.imagen {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
 
 .Menu {
     text-align: center;
@@ -25,93 +24,115 @@ h1, h2, h3 {
 .Normal {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; 
-    gap: 30px; 
+    justify-content: flex-start;
+    gap: 30px;
     padding: 20px;
 }
 
-/* Estilo de los items (cada producto) */
 .item {
-    background-color: #f2d6c4; /* Color rosa claro */
-    padding: 20px;
+    background-color: #f2d6c4;
     border-radius: 10px;
-    width: 30%;  /* Ajustamos el ancho para que tres divs quepan en una fila */
+    width: 30%;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    box-sizing: border-box;  /* Asegura que el padding no afecte el tamaño del ancho */
+    box-sizing: border-box;
+    margin-bottom: 15px;
 }
 
 .item img {
-    width: 100%;    /* La imagen ocupará el 100% del contenedor */
-    height: 300px;  /* Tamaño fijo para la altura */
+    width: 100%;
+    height: 300px;
 }
 
-/* Estilo de los botones */
 button {
-    background-color: #6f4f37; /* Color café */
+    background-color: #6f4f37;
     color: white;
     border: none;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 12px 20px;
+    border-radius: 8px;
     cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
     margin-top: 10px;
+    width: 100%;
+    max-width: 250px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
 }
 
 button a {
     color: white;
     text-decoration: none;
+    display: block;
 }
 
 button:hover {
-    background-color: #9e7b5d; /* Café más claro */
+    background-color: #9e7b5d;
+    transform: translateY(-3px);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
 .item h3 {
     color: #6f4f37;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 15px 0;
+    text-transform: uppercase;
 }
-
 
 .item button {
     display: block;
     margin: 10px auto;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .letra {
-        position: absolute; 
-        top: 50%;  /* Asegura que se mantenga en el centro vertical */
-        left: 20px; /* Mantiene el texto un poco alejado de los bordes */
-        transform: translateY(-27px); /* Esto mantiene el texto centrado verticalmente */
-        font-size: 2rem;
-        font-weight: bold;
-        z-index: 10;
-        animation: salto 1s ease-out; }
-.letra h2{
-  color: white;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-27px);
+    font-size: 2rem;
+    font-weight: bold;
+    z-index: 10;
+    animation: salto 1s ease-out;
 }
-    
-    @keyframes salto {
-        0% {
-            transform: translateY(30px); /* Comienza un poco hacia abajo */
-            opacity: 0;
-        }
-        50% {
-            transform: translateY(-20px); /* Sube un poco */
-            opacity: 1;
-        }
-        100% {
-            transform: translateY(-27px); /* Termina un poco más arriba */
-        }
-    }
 
-/* Para pantallas pequeñas, ajustamos el diseño */
+.letra h2 {
+    color: white;
+}
+
+@keyframes salto {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(-20px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-27px);
+    }
+}
+
 @media (max-width: 768px) {
     .item {
-        width: 45%;  /* Hacemos los divs más pequeños para pantallas medianas */
+        width: 45%;
     }
 }
 
 @media (max-width: 480px) {
     .item {
-        width: 90%;  /* Para pantallas muy pequeñas (móviles), hacemos que los divs ocupen casi todo el ancho */
+        width: 90%;
     }
 }

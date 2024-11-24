@@ -1,0 +1,113 @@
+.Normal {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f9f1ea;
+    padding: 20px;
+    
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 0 auto; 
+    color: #3e2723; 
+}
+
+.PostreContenedor {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.ImagenNombre {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.ImagenNombre h2 {
+    color: #6A4C37; 
+    margin: 10px 0;
+    font-size: 30px;
+}
+
+.Descripcion {
+    max-width: 60%;
+    font-size: 30px;
+    line-height: 1.6;
+    color: #5d4037; 
+    text-align: justify; 
+    margin-left: 20px;
+    
+}
+
+.Botones {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+    color: #f4f4f4;
+}
+button {
+    padding: 10px 20px;
+    background-color:  #F277A4; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+   
+}
+
+button:hover {
+    background-color: #db487e; 
+}
+.contenedor {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    margin: 50px auto;
+    overflow: hidden;
+}
+
+.carrusel ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    width: 300%;
+    animation: moverCarrusel 20s infinite alternate ease-in-out;
+}
+
+.carrusel li {
+    width: 33.33%;
+    list-style: none;
+    position: relative;
+}
+
+.carrusel img {
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes moverCarrusel {
+    0% {
+        margin-left: 0;
+    }
+    25% {
+        margin-left: 0;
+    }
+    50% {
+        margin-left: -100%;
+    }
+    75% {
+        margin-left: -100%;
+    }
+    100% {
+        margin-left: -200%;
+    }
+}
