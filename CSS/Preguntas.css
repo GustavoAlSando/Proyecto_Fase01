@@ -11,9 +11,9 @@ section {
     margin: 20px auto;
     padding: 20px;
     max-width: 800px;
-    border: 2px solid #e63946; /* Borde rosado fuerte */
+    border: 2px solid #e63946; 
     border-radius: 10px;
-    background-color: #ffe3e9; /* Fondo rosado suave */
+    background-color: #ffe3e9; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: left;
 }
@@ -27,7 +27,7 @@ section:hover {
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 h3 {
-    color: #e63946; /* Color del texto principal */
+    color: #e63946; 
     margin: 0;
     font-size: 1.5rem;
 }
@@ -39,7 +39,6 @@ h4 {
     line-height: 1.6;
 }
 
-/* Línea de separación */
 hr {
     border: 1px solid #e63946;
     margin: 20px 0;
