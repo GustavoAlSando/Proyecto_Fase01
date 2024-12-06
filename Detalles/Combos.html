@@ -7,6 +7,7 @@
     <meta name="Autores" content="Keyla Salazar,Gustavo Sandoval">
     <meta name="Description" content="Detalles de los combos">
     <meta name="Keywords" content="cakes,cookies, sweet, cake shop, confectionary, candies, flour,fruts, nuts">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../CSS/Menu.css">
     <link rel="stylesheet" href="../CSS/DetallesMenu.css">
     <link rel="stylesheet" href="../CSS/Carrusel.css">
@@ -15,28 +16,35 @@
 </head>
 <body>
     <header class="encabezado">
-        <h1><img src="../Imagenes/logo-removebg.png" alt="icono">Taty Sweet</h1>
-        <nav id="Inicio">
-            <ol>
-                <li>
-                    <a href="../Index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="../Menu.html">Menu</a>
-                </li>
-                <li>
-                    <a href="../Especial.html">Especial</a>
-                </li>
-                <li>
-                    <a href="../Reseñas.html">Reseñas</a>
-                </li>
-                <li>
-                    <a href="../PreguntasFrecuentes.html">Preguntas Frecuentes</a>
-                </li>
-                <li>
-                    <a href="../Index.html#Contacto">Contacto</a>
-                </li>
-            </ol>
+       
+        <!-- Navbar con menú hamburguesa -->
+        <nav class="navbar navbar-expand-lg navbar-light" id="Inicio">
+            <h1><img src="../Imagenes/logo-removebg.png" alt="icono">Taty Sweet</h1>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Menu.html">Menú</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Especial.html">Especial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Reseñas.html">Reseñas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../PreguntasFrecuentes.html">Preguntas Frecuentes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Index.html#Contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
@@ -73,5 +81,8 @@
         </div>
         
     </main>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

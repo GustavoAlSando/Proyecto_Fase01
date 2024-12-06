@@ -1,20 +1,21 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
+
+/* Estilos generales del encabezado */
 .encabezado {
-    position: relative;
-    background-color: #F277A4;
-    color: #6A4C37;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-
+    background-color: #F277A4; /* Fondo rosa */
+    font-family: 'Times New Roman', Times, serif;
+    color: #6A4C37; /* Color marrón del texto */
 }
 
+/* Contenedor para el título y el navbar, alineados horizontalmente */
+.header-container {
+    display: flex;                 
+    justify-content: space-between; 
+    align-items: center;           
+    flex-wrap: wrap;              
+}
+
+/* Estilo para el título */
 .encabezado h1 {
     display: flex;
     align-items: center;
@@ -24,8 +25,37 @@
 
 .encabezado h1 img {
     height: 50px;
-    margin-right: 10px;
+    margin-right: 10px; 
 }
+
+/* Estilo para el navbar */
+.navbar {
+    margin: 0;
+}
+
+.navbar-toggler {
+    border: none; /* Quitar borde del botón de hamburguesa */
+}
+
+/* Estilos para hacer el logo y el navbar responsivos */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column; /* En pantallas pequeñas, apilamos el logo y el navbar */
+        align-items: flex-start;
+    }
+
+    .navbar-nav {
+        margin-top: 10px; /* Agregamos un margen superior cuando se cambia a columna */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Ajustamos más aún en pantallas muy pequeñas */
+    .header-container {
+        padding: 10px; /* Reducimos el padding */
+    }
+}
+
 
 #Inicio ol {
     list-style-type: none;

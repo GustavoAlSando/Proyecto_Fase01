@@ -44,7 +44,7 @@ h1, h2, h3 {
     height: 300px;
 }
 
-button {
+.Menu button {
     background-color: #6f4f37;
     color: white;
     border: none;
@@ -61,22 +61,22 @@ button {
     margin-bottom: 10px;
 }
 
-button a {
+.Menu button a {
     color: white;
     text-decoration: none;
     display: block;
 }
 
-button:hover {
+.Menu button:hover {
     background-color: #9e7b5d;
     transform: translateY(-3px);
 }
 
-button:active {
+.Menu button:active {
     transform: translateY(1px);
 }
 
-button:focus {
+.Menu button:focus {
     outline: none;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }

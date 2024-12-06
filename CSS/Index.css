@@ -1,3 +1,6 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
 .Index2 {
     display: flex;
     justify-content: space-between;
@@ -172,4 +175,57 @@ h2 {
 .horario-item p {
     font-size: 1rem;
     color: #555;
+}
+
+
+.Index2 {
+    padding: 60px 20px;
+    background-color: #401F14;
+    color: white;
+    text-align: center;
+}
+
+.Index2 h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+
+.carousel-item img {
+    width: 100%;  
+    height: 400px; 
+    
+}
+
+.img-carrusel {
+    object-fit: cover; 
+    width: 70%;        
+    max-width: 400px;  
+    height: auto;       
+    margin: 0 auto;     
+}
+
+
+
+.carousel-item img {
+    max-height: 400px; 
+    min-height: 300px; 
+}
+
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 300px; 
+    }
+    .Index2 h2 {
+        font-size: 5vw; 
+    }
+}
+
+
+@media (min-width: 768px) {
+    .carousel-item img {
+        height: 400px; 
+    }
 }
