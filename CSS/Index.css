@@ -10,6 +10,7 @@
     color: white;
     border-radius: 15px;
     flex-wrap: wrap;
+    text-align: center;
 }
 
 .Index2 h2 {
@@ -21,6 +22,8 @@
     letter-spacing: 4px;
     max-width: 50%;
     text-align: center;
+    left: 25%;
+    position: relative;
 }
 
 .imagen div {
