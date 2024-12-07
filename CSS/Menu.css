@@ -5,6 +5,7 @@
     background-color: #F277A4; /* Fondo rosa */
     font-family: 'Times New Roman', Times, serif;
     color: #6A4C37; /* Color marrón del texto */
+    position: relative;
 }
 
 /* Contenedor para el título y el navbar, alineados horizontalmente */
@@ -12,7 +13,8 @@
     display: flex;                 
     justify-content: space-between; 
     align-items: center;           
-    flex-wrap: wrap;              
+    flex-wrap: wrap;
+    padding: 10px 20px;              
 }
 
 /* Estilo para el título */
@@ -21,6 +23,7 @@
     align-items: center;
     font-size: 2rem;
     margin: 0;
+    z-index: 1000;
 }
 
 .encabezado h1 img {

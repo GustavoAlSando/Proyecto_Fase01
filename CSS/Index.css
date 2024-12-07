@@ -9,6 +9,7 @@
     background-color: #401F14;
     color: white;
     border-radius: 15px;
+    flex-wrap: wrap;
 }
 
 .Index2 h2 {
@@ -19,6 +20,7 @@
     text-transform: uppercase;
     letter-spacing: 4px;
     max-width: 50%;
+    text-align: center;
 }
 
 .imagen div {
@@ -35,6 +37,8 @@
 
 .imagen h1 {
     margin: 0;
+    position: relative;
+    z-index: 2;
 }
 
 @keyframes salto {
@@ -55,6 +59,7 @@
     width: 100%;
     margin: 0;
     padding: 0;
+    position: relative;
 }
 
 .imagen img {
@@ -222,7 +227,6 @@ h2 {
         font-size: 5vw; 
     }
 }
-
 
 @media (min-width: 768px) {
     .carousel-item img {
