@@ -38,10 +38,11 @@
     animation: salto 1s ease-out;
 }
 
-.imagen h1 {
+.imagen h2 {
     margin: 0;
     position: relative;
     z-index: 2;
+    color: #fff;
 }
 
 @keyframes salto {
