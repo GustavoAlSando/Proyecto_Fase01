@@ -242,7 +242,9 @@ h2 {
         flex-direction: column;
         align-items: center;
     }
-
+    #Contactese h2 {
+        font-size: 1.5rem;  
+    }
     footer .logo, footer .locación, footer .contacto {
         flex: 1 1 100%;
         margin-bottom: 20px;
@@ -265,6 +267,14 @@ h2 {
 
 
 @media screen and (max-width: 480px) {
+    #Contactese h2 {
+        font-size: 1.2rem;  
+    }
+    .logo h3{
+        font-size: 1.2rem;  
+
+    }
+
     footer h2, footer h3 {
         font-size: 1.2em;
     }
