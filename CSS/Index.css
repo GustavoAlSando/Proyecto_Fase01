@@ -123,7 +123,6 @@ h2 {
 
 .image-container {
     flex: 1;
-    max-width: 48%; /* Controla el ancho de la imagen */
     text-align: center;
     border-radius: 8px;
     overflow: hidden;

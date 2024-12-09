@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Autores" content="Keyla Salazar,Gustavo Sandoval">
+    <meta name="Autores" content="Keyla Salazar, Gustavo Sandoval">
     <meta name="Description" content="Detalles de los combos">
-    <meta name="Keywords" content="cakes,cookies, sweet, cake shop, confectionary, candies, flour,fruts, nuts">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="Keywords" content="cakes, cookies, sweet, cake shop, confectionary, candies, flour, fruits, nuts">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../CSS/Menu.css">
     <link rel="stylesheet" href="../CSS/DetallesMenu.css">
     <link rel="stylesheet" href="../CSS/Carrusel.css">
@@ -15,71 +15,80 @@
 </head>
 <body>
     <header class="encabezado">
-
         <!-- Navbar con menú hamburguesa -->
         <nav class="navbar navbar-expand-lg navbar-light" id="Inicio">
             <h1><img src="../Imagenes/logo-removebg.png" alt="icono">Taty Sweet</h1>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../Index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../Menu.html">Menú</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../Especial.html">Especial</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../Reseñas.html">Reseñas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../PreguntasFrecuentes.html">Preguntas Frecuentes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../Index.html#Contacto">Contacto</a>
-                    </li>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../Index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../Menu.html">Menú</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../Especial.html">Especial</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../Reseñas.html">Reseñas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../PreguntasFrecuentes.html">Preguntas Frecuentes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../Index.html#Contacto">Contacto</a></li>
                 </ul>
             </div>
         </nav>
     </header>
+
     <main>
         <div class="Normal">
             <div class="PostreContenedor">
                 <div class="ImagenNombre">
                     <h2>Otros postres para tus celebraciones especiales</h2>
                     <div class="contenedor">
-                        <div class="carrusel">
-                            <ul>
-                                <li><img src="../Postres/Especial/EspecialDiadelPadre1.jpeg" alt="otro1" width="300px" height="340px"></li>
-                                <li><img src="../Postres/Especial/EspecialRevelacion1.jpeg" alt="otro1" width="300px" height="340px"></li>
-                            </ul>
+                        <!-- Carrusel de imágenes -->
+                        <div id="carouselOtros" class="carousel slide" data-bs-ride="carousel">
+                            <!-- Indicadores (puntos) del carrusel -->
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselOtros" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselOtros" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            </div>
+
+                            <!-- Imágenes del carrusel -->
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../Postres/Especial/EspecialDiadelPadre1.jpeg" class="d-block w-100" alt="otro1" style="height: 500px; object-fit: cover;">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../Postres/Especial/EspecialRevelacion1.jpeg" class="d-block w-100" alt="otro2" style="height: 500px; object-fit: cover;">
+                                </div>
+                            </div>
+
+                            <!-- Controles (anterior y siguiente) -->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselOtros" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselOtros" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="Descripcion">
                     <p>
-                        Otros pasteles que también se realizan para celebrar un día especial como: Día del Padre, 
-                        Día de la Madre, entre otros. También se confeccionan pasteles especiales para revelación de sexo 
+                        Pasteles para Día del Padre, 
+                        Día de la Madre, especiales para revelación de sexo 
                         para celebrar la llegada de un nuevo miembro a la familia.
                     </p>
                 </div>
             </div>
-        
+
             <!-- Botones -->
             <div class="Botones">
                 <button><a href="https://wa.me/+50687363756" target="_blank">Consultar</a></button>
                 <button><a href="../Especial.html">Regresar</a></button>
             </div>
         </div>
-        
     </main>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Scripts necesarios para el funcionamiento de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

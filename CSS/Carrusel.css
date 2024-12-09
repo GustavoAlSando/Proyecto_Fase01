@@ -1,45 +1,86 @@
-.contenedor {
-    position: relative;
-    width: 100%;
-    max-width: 600px;
-    height: 400px;
-    margin: 50px auto;
-    overflow: hidden;
+
+#carouselTresLeches {
+    width: 400px; /* O puedes poner un valor fijo como 1200px */
+    max-width: 1200px; /* Ajusta el ancho máximo si lo deseas */
+    margin: 0 auto; /* Centra el carrusel en la página */
 }
 
-.carrusel ul {
-    display: flex;
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-    width: 300%;
-    animation: moverCarrusel 20s infinite alternate ease-in-out;
+#carouselQuequeSeco {
+    width: 400px; /* O puedes poner un valor fijo como 1200px */
+    max-width: 1200px; /* Ajusta el ancho máximo si lo deseas */
+    margin: 0 auto; /* Centra el carrusel en la página */
+}
+#carouselExample {
+    width: 400px; /* O puedes poner un valor fijo como 1200px */
+    max-width: 1200px; /* Ajusta el ancho máximo si lo deseas */
+    margin: 0 auto; /* Centra el carrusel en la página */
+}
+#carouselArreglos {
+    width: 400px; /* O puedes poner un valor fijo como 1200px */
+    max-width: 1200px; /* Ajusta el ancho máximo si lo deseas */
+    margin: 0 auto; /* Centra el carrusel en la página */
 }
 
-.carrusel li {
-    width: 33.33%;
-    list-style: none;
-    position: relative;
+#carouselCupcakes{
+    width: 400px; /* O puedes poner un valor fijo como 1200px */
+    max-width: 1200px; /* Ajusta el ancho máximo si lo deseas */
+    margin: 0 auto; /* Centra el carrusel en la página */
+}
+
+#carouselCombos
+{
+    width: 400px; /* O puedes poner un valor fijo como 1200px */
+    max-width: 1200px; /* Ajusta el ancho máximo si lo deseas */
+    margin: 0 auto; /* Centra el carrusel en la página */
 }
 
 
-.carrusel img {
-    width: 80%;
-    height: 100%;
-    object-fit: cover;
+#carouselBabyShower
+{
+    width: 400px; /* O puedes poner un valor fijo como 1200px */
+    max-width: 1200px; /* Ajusta el ancho máximo si lo deseas */
+    margin: 0 auto; /* Centra el carrusel en la página */
 }
 
-@keyframes moverCarrusel {
-    0% {
-        margin-left: 0;
-    }
-    33% {
-        margin-left: -100%;
-    }
-    66% {
-        margin-left: -200%;
-    }
-    100% {
-        margin-left: -200%;
-    }
+#carouselBodas
+{
+    width: 400px; /* O puedes poner un valor fijo como 1200px */
+    max-width: 1200px; /* Ajusta el ancho máximo si lo deseas */
+    margin: 0 auto; /* Centra el carrusel en la página */
+}
+#carouselPersonalizados
+{
+    width: 400px; /* O puedes poner un valor fijo como 1200px */
+    max-width: 1200px; /* Ajusta el ancho máximo si lo deseas */
+    margin: 0 auto; /* Centra el carrusel en la página */
+}
+#carouselPrimeraComunion
+{
+    width: 400px; /* O puedes poner un valor fijo como 1200px */
+    max-width: 1200px; /* Ajusta el ancho máximo si lo deseas */
+    margin: 0 auto; /* Centra el carrusel en la página */
+}
+#carouselQuinceaños
+{
+    width: 400px; /* O puedes poner un valor fijo como 1200px */
+    max-width: 1200px; /* Ajusta el ancho máximo si lo deseas */
+    margin: 0 auto; /* Centra el carrusel en la página */
+}
+#carouselMesasDulces
+{
+    width: 400px; /* O puedes poner un valor fijo como 1200px */
+    max-width: 1200px; /* Ajusta el ancho máximo si lo deseas */
+    margin: 0 auto; /* Centra el carrusel en la página */
+}
+#carouselOtros
+{
+    width: 400px; /* O puedes poner un valor fijo como 1200px */
+    max-width: 1200px; /* Ajusta el ancho máximo si lo deseas */
+    margin: 0 auto; /* Centra el carrusel en la página */
+}
+#carouselTortaChilena
+{
+    width: 400px; /* O puedes poner un valor fijo como 1200px */
+    max-width: 1200px; /* Ajusta el ancho máximo si lo deseas */
+    margin: 0 auto; /* Centra el carrusel en la página */
 }
