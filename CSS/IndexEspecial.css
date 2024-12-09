@@ -31,6 +31,8 @@
 
 .imagen h1 {
     margin: 0;
+    position: relative;
+    z-index: 2;
 }
 
 @keyframes salto {
@@ -104,14 +106,14 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 30px; /* Ajuste del espacio entre imagen y texto */
+    gap: 30px; 
     margin-top: 30px;
-    flex-wrap: wrap; /* Permite que los elementos se acomoden en pantallas más pequeñas */
+    flex-wrap: wrap; 
 }
 
 .image-container {
     flex: 1;
-    max-width: 48%; /* Controla el ancho de la imagen */
+    max-width: 48%; 
     text-align: center;
     border-radius: 8px;
     overflow: hidden;

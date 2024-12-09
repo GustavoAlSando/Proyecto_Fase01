@@ -1,14 +1,10 @@
-
-
-/* Estilos generales del encabezado */
 .encabezado {
-    background-color: #F277A4; /* Fondo rosa */
+    background-color: #F277A4; 
     font-family: 'Times New Roman', Times, serif;
-    color: #6A4C37; /* Color marrón del texto */
+    color: #6A4C37; 
     position: relative;
 }
 
-/* Contenedor para el título y el navbar, alineados horizontalmente */
 .header-container {
     display: flex;                 
     justify-content: space-between; 
@@ -17,7 +13,7 @@
     padding: 10px 20px;              
 }
 
-/* Estilo para el título */
+
 .encabezado h1 {
     display: flex;
     align-items: center;
@@ -31,31 +27,30 @@
     margin-right: 10px; 
 }
 
-/* Estilo para el navbar */
 .navbar {
     margin: 0;
 }
 
 .navbar-toggler {
-    border: none; /* Quitar borde del botón de hamburguesa */
+    border: none; 
 }
 
-/* Estilos para hacer el logo y el navbar responsivos */
+/*Pantallas medianas*/
 @media (max-width: 768px) {
     .header-container {
-        flex-direction: column; /* En pantallas pequeñas, apilamos el logo y el navbar */
+        flex-direction: column; 
         align-items: flex-start;
     }
 
     .navbar-nav {
-        margin-top: 10px; /* Agregamos un margen superior cuando se cambia a columna */
+        margin-top: 10px; 
     }
 }
 
+/*Pantallas pequeñas*/
 @media (max-width: 480px) {
-    /* Ajustamos más aún en pantallas muy pequeñas */
     .header-container {
-        padding: 10px; /* Reducimos el padding */
+        padding: 10px; 
     }
 }
 

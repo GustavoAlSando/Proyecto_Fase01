@@ -47,7 +47,7 @@ h4 {
 
 .btn-primary {
     color: #fff;
-    background-color: #ff99cc; /* Rosado */
+    background-color: #ff99cc; 
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -58,7 +58,7 @@ h4 {
 }
 
 .btn-primary:hover {
-    background-color: #ff66a3; /* Rosado más oscuro */
+    background-color: #ff66a3; 
 }
 
 .card {

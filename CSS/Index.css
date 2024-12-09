@@ -116,9 +116,9 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 30px; /* Ajuste del espacio entre imagen y texto */
+    gap: 30px; 
     margin-top: 30px;
-    flex-wrap: wrap; /* Permite que los elementos se acomoden en pantallas más pequeñas */
+    flex-wrap: wrap; 
 }
 
 .image-container {
@@ -165,8 +165,8 @@ h2 {
 
 .horarios-container {
     display: flex;
-    justify-content: center; /* Centra los elementos en el contenedor */
-    gap: 50px; /* Espacio entre los elementos */
+    justify-content: center; 
+    gap: 50px; 
 }
 
 .horario-item {
