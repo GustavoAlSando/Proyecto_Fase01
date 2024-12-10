@@ -3,6 +3,7 @@
     font-family: 'Times New Roman', Times, serif;
     color: #6A4C37; 
     position: relative;
+    align-items: center;
 }
 
 .header-container {
